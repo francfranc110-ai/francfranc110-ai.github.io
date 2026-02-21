@@ -1,8 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head><title>My Free Website</title></head>
-<body>
-    <h1>Hello World!</h1>
-    <p>This website is hosted for free on GitHub.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Harmony Style</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; color: #1a1a1a; }
+        .hero-border { border: 1px solid #1a1a1a; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <nav class="flex justify-between items-center mb-24">
+        <div class="text-xl font-semibold tracking-tighter">STUDIO.</div>
+        <div class="space-x-8 text-sm uppercase tracking-widest">
+            <a href="#" class="hover:line-through">Work</a>
+            <a href="#" class="hover:line-through">About</a>
+            <a href="#" class="hover:line-through">Contact</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <section>
+                <h1 class="text-6xl md:text-8xl font-light leading-tight tracking-tighter mb-8">
+                    Creative <br> Design.
+                </h1>
+                <p class="text-lg text-gray-600 max-w-sm mb-8">
+                    Building clean, functional, and aesthetic digital experiences with a focus on minimalism.
+                </p>
+                <button class="hero-border px-8 py-3 uppercase text-xs tracking-widest hover:bg-black hover:text-white transition">
+                    Explore Work
+                </button>
+            </section>
+            
+            <section class="hero-border h-[500px] bg-gray-100 flex items-center justify-center italic text-gray-400">
+                [ Placeholder for Image ]
+            </section>
+        </div>
+
+        <section class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="aspect-square bg-zinc-200 flex items-center justify-center text-xs uppercase tracking-widest">Project 01</div>
+            <div class="aspect-square bg-zinc-300 flex items-center justify-center text-xs uppercase tracking-widest">Project 02</div>
+            <div class="aspect-square bg-zinc-400 flex items-center justify-center text-xs uppercase tracking-widest">Project 03</div>
+        </section>
+    </main>
+
+    <footer class="mt-48 text-center text-[10px] uppercase tracking-[0.3em] text-gray-400">
+        &copy; 2026 Crafted by Hand
+    </footer>
+
 </body>
 </html>
